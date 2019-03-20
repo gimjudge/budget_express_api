@@ -19,7 +19,7 @@ app.use(jsonParser());
 
 //Mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/budget', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://budgetexp:423nterInn@cluster0-dfhsx.gcp.mongodb.net/test?retryWrites=true', { useNewUrlParser: true });
 
 //Create db connection variable
 let db = mongoose.connection;
